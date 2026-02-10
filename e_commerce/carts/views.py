@@ -37,11 +37,20 @@ def checkout_home(request):
     #se o carrinho acabou de ser criado, ele tá zerado
     #ou se o carrinho já existir mas não tiver nada dentro
     if cart_created or cart_obj.products.count() == 0:
+<<<<<<< HEAD
         return redirect("cart:home")  
+=======
+        return redirect("cart:home")
+>>>>>>> create_addresses-app
     
     login_form = LoginForm()
     guest_form = GuestForm()
     address_form = AddressForm()
+<<<<<<< HEAD
+=======
+
+    billing_profile, billing_profile_created = BillingProfile.objects.new_or_get(request)
+>>>>>>> create_addresses-app
 
     billing_profile, billing_profile_created = BillingProfile.objects.new_or_get(request)
     if billing_profile is not None:

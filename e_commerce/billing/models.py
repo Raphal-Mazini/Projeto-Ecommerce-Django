@@ -3,10 +3,17 @@ from django.db import models
 from django.db.models.signals import post_save
 
 from accounts.models import GuestEmail
+<<<<<<< HEAD
 
 User = settings.AUTH_USER_MODEL
 # fulano@mail.com -> pode ter 1.000.000.000 billing profiles
 # user fulano@mail.com -> pode ter apenas 1 billing profile
+=======
+User = settings.AUTH_USER_MODEL
+# fulano@mail.com -> pode ter 1.000.000.000 billing profiles
+# user fulano@mail.com -> pode ter apenas 1 billing profile
+
+>>>>>>> create_addresses-app
 class BillingProfileManager(models.Manager):
     def new_or_get(self, request):
         user = request.user
@@ -22,10 +29,14 @@ class BillingProfileManager(models.Manager):
             guest_email_obj = GuestEmail.objects.get(id=guest_email_id)
             obj, created = self.model.objects.get_or_create(
                                             email=guest_email_obj.email)
+<<<<<<< HEAD
         else:
             pass
         return obj, created
 
+=======
+        return obj, created
+>>>>>>> create_addresses-app
 class BillingProfile(models.Model):
     user = models.OneToOneField(User, null = True, blank = True, on_delete = models.CASCADE)
     email = models.EmailField()
