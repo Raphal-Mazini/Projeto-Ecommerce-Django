@@ -22,11 +22,7 @@ class OrderManager(models.Manager):
             obj = qs.first()
         else:
             obj = self.model.objects.create(
-<<<<<<< HEAD
-                    billing_profile = billing_profile,
-=======
                     billing_profile = billing_profile, 
->>>>>>> create_addresses-app
                     cart=cart_obj)
             created = True
         return obj, created
@@ -60,16 +56,9 @@ class Order(models.Model):
 def pre_save_create_order_id(sender, instance, *args, **kwargs):
     if not instance.order_id:
         instance.order_id = unique_order_id_generator(instance)
-<<<<<<< HEAD
-    # return all orders with this Cart instance, excluding those  
-    # that have the same billing profile instance
-    qs = Order.objects.filter(cart = instance.cart).exclude(billing_profile = instance.billing_profile)
-    print("QuerySet: ", qs)
-=======
     # retorna todos os orders com esta instância de cart, 
     # excluindo aqueles que têm a mesma instância de billing_profile
     qs = Order.objects.filter(cart = instance.cart).exclude(billing_profile = instance.billing_profile)
->>>>>>> create_addresses-app
     if qs.exists():
         qs.update = False
 

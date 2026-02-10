@@ -28,8 +28,4 @@ def checkout_address_create_view(request):
             return redirect(redirect_path)
         else:
             return redirect("cart:checkout")
-<<<<<<< HEAD
     return redirect("cart:checkout") 
-=======
-    return redirect("cart:checkout")
->>>>>>> create_addresses-app
