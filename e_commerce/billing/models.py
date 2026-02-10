@@ -22,8 +22,6 @@ class BillingProfileManager(models.Manager):
             guest_email_obj = GuestEmail.objects.get(id=guest_email_id)
             obj, created = self.model.objects.get_or_create(
                                             email=guest_email_obj.email)
-        else:
-            pass
         return obj, created
 class BillingProfile(models.Model):
     user = models.OneToOneField(User, null = True, blank = True, on_delete = models.CASCADE)
