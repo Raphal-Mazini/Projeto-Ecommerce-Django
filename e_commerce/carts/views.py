@@ -68,7 +68,10 @@ def checkout_home(request):
             request.session['cart_items'] = 0
             del request.session['cart_id']
             return redirect("cart:success")
+<<<<<<< HEAD
     
+=======
+>>>>>>> order_summary_and_success_page
     context = {
         "object": order_obj,
         "billing_profile": billing_profile,
