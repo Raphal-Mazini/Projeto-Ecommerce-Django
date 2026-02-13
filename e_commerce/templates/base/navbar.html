@@ -5,13 +5,13 @@
 {% url 'logout' as logout_url %}
 {% url 'register' as register_url %}
 {% url 'cart:home' as cart_url %}
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-3">
-  <div class='container'>
+<nav class="navbar navbar-expand-lg navbar-light bg-white mb-3">
+  <div class='container mt-1'>
     <a class="navbar-brand" href="{{ home_url }}">
-      <img src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+      <img src="https://github.com/Raphal-Mazini/teste/blob/main/teste_logo%20(1).png?raw=true" width="45" height="45" class="d-inline-block align-top" alt="">
       {% if nome_da_marca %} 
       {{ nome_da_marca }} 
-      {% else %} C&oacute;digo Fluente eCommerce 
+      {% else %} 
       {% endif %}
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,9 +29,12 @@
           <a class="nav-link" href="{{ products_list_url }}">Produtos</a>
         </li>
         {% if request.user.is_authenticated %}
-        <li class="nav-item {% if request.path == login_url %} active {% endif %}"> 
-          <a class="nav-link" href="{{ logout_url }}">Logout</a> 
-        </li>
+        <li class="nav-item">
+          <form action="{{ logout_url }}" method="post" style="display: inline;">
+            {% csrf_token %}
+            <button type="submit" class="nav-link" style="background: none; border: none; cursor: pointer;">Logout</button>
+  </form>
+</li>
         {% else %}
         <li class="nav-item {% if request.path == login_url %} active {% endif %}">
           <a class="nav-link" href="{{ login_url }}?next={{request.path}}">Login</a>
@@ -41,6 +44,7 @@
         </li>
       {% endif %}
       <li class="nav-item {% if request.path == cart_url %} active {% endif %}">
+<<<<<<< HEAD
         <a class="nav-link" href="{{ cart_url }}">
           <span class="navbar-cart-count">
             {{ request.session.cart_items }}
@@ -51,15 +55,17 @@
         <!-- <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Dropdown link
+=======
+          <a class="nav-link mx-4" href="{{ cart_url }}">
+            <span class="navbar-cart-count">
+              {{ request.session.cart_items }}
+            </span>
+              <i class="fa fa-shopping-cart"></i>
+>>>>>>> navbar_cart_count
           </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-        </li> -->
+      </li>
       </ul>
       {% include 'search/snippets/search-form.html' %}
     </div>
-  </div><!--fim container-->
+  </div>
 </nav>
