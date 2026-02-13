@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-
->>>>>>> order_summary_and_success_page
 {% if address_qs.exists %}
   <form method='POST' action='{{ action_url }}'> {% csrf_token %}
     {% if next_url %}

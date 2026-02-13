@@ -27,9 +27,4 @@ class Address(models.Model):
                 city = self.city,
                 state = self.state,
                 postal= self.postal_code,
-                country = self.country
-<<<<<<< HEAD
-            )
-=======
-            )
->>>>>>> order_summary_and_success_page
+                country = self.country)
