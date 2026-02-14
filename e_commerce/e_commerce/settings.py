@@ -48,10 +48,7 @@ INSTALLED_APPS = [
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
-<<<<<<< HEAD
-=======
 
->>>>>>> refresh_cart_ajax
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
