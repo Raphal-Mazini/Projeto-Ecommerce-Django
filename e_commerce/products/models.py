@@ -1,3 +1,4 @@
+from decimal import Decimal
 from django.db.models import Q
 from django.db import models
 from e_commerce.utils import unique_slug_generator
@@ -33,9 +34,7 @@ class ProductManager(models.Manager):
 
     def get_by_id(self, id):
         qs = self.get_queryset().filter(id = id)
-        if qs.count() == 1:
-            return qs.first()
-        return None
+        return qs.first() if qs.count() == 1 else None
 
     def search(self, query):
         return self.get_queryset().active().search(query)
@@ -45,7 +44,7 @@ class Product(models.Model): #product_category
     title       = models.CharField(max_length=120)
     slug        = models.SlugField(blank = True, unique = True)
     description = models.TextField()
-    price       = models.DecimalField(decimal_places=2, max_digits=20, default=100.00)
+    price       = models.DecimalField(decimal_places=2, max_digits=20, default=Decimal('100.00'))
     image       = models.FileField(upload_to = 'products/', null = True, blank = True)
     featured    = models.BooleanField(default = False)
     active      = models.BooleanField(default = True)
