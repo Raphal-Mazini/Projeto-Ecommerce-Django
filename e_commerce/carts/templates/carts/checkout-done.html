@@ -1,7 +1,10 @@
 {% extends "base.html" %}
-{% load static %} {% block content %}
-<div class='col-6 mx-auto py-3 text-center'>
-  <img src="{% static 'img/buy_success.jpg' %}" fetchpriority="high" width="400" height="400" class="d-inline-block align-top" alt="Sucesso">
-  <h2 class='display-5'>Thank you for your order!</h2>
+{% load static %}
+
+{% block content %}
+<div class='col-6 mx-auto py-5 text-center'>
+  <img src="{% static 'img/buy_success.jpg' %}" fetchpriority="high" width="400" height="400" class="img-fluid mb-4" alt="Sucesso">
+  <h2 class='display-5'>Obrigado pelo seu pedido!</h2>
+  <p>Você receberá um e-mail de confirmação em breve.</p>
 </div>
 {% endblock %}
