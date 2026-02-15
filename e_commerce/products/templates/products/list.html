@@ -1,10 +1,10 @@
 {% extends "base.html" %}
 {% block content %}
-    
+<div class='mt-5'>
     <div class='row'>
         {% for obj in object_list %}
             <div class='col'>
-            {{ forloop.counter }}
+            <!-- {{ forloop.counter }} -->
             {% include 'products/snippets/card.html' with instance=obj %}
             {% if forloop.counter|divisibleby:3 %}
                 </div><!--close the row--></div><!--close the col--><div class='row'><div class='col-12'><hr/></div>
@@ -15,4 +15,5 @@
             {% endif%}
         {% endfor%}
     </div>
+</div
 {% endblock content %}

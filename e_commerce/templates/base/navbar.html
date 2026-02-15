@@ -7,10 +7,10 @@
 {% url 'register' as register_url %}
 {% url 'cart:home' as cart_url %}
 
-<nav class="navbar navbar-expand-lg navbar-light bg-white mb-3">
-  <div class='container mt-1'>
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+  <div class='container text-uppercase text-center'>
     <a class="navbar-brand" href="{{ home_url }}">
-      <img src="{% static 'img/logo_brimauh.png' %}" fetchpriority="high" width="45" height="45" class="d-inline-block align-top" alt="">
+      <img src="{% static 'img/logo_brimauh.png' %}" fetchpriority="high" width="40" height="40" class="d-inline-block align-top" alt="">
       {% if nome_da_marca %} 
       {{ nome_da_marca }}           
       {% else %} 
@@ -34,7 +34,7 @@
         <li class="nav-item">
           <form action="{{ logout_url }}" method="post" style="display: inline;">
             {% csrf_token %}
-            <button type="submit" class="nav-link" style="background: none; border: none; cursor: pointer;">Logout</button>
+            <button type="submit" class="nav-link text-uppercase" style="background: none; border: none; cursor: pointer;">Logout</button>
   </form>
 </li>
         {% else %}
