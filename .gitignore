@@ -5,3 +5,10 @@ bin/
 .vscode/
 lib/
 pyvenv.cfg
+
+static_cdn/
+static_root/
+__pycache__/
+*.pyc
+db.sqlite3
+venv/
