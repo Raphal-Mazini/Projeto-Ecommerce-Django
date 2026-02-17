@@ -30,7 +30,7 @@ class ContactForm(forms.Form):
     
     def clean_email(self):
         email = self.cleaned_data.get("email")
-        if email and ("@" not in email or ".com" not in email):
+        if email and ("@" not in email and "." not in email):
             raise forms.ValidationError("O Email deve ser válido !")
         return email
 
