@@ -6,6 +6,7 @@ from .forms import ContactForm
 
 def is_ajax(request):
     return request.META.get('HTTP_X_REQUESTED_WITH') == 'XMLHttpRequest'
+
 def home_page(request):
     context = {
                     "title": "Home Page",
@@ -25,8 +26,8 @@ def about_page(request):
 def contact_page(request):
     contact_form = ContactForm(request.POST or None)
     context = {
-                    "title": "Contact Brimauh Fashion Outlet",
-                    "content": "Send your message",
+                    "title": "Página de Contato",
+                    "content": "Bem vindo a página de contato",
                     "form": contact_form	
               }
     if contact_form.is_valid():
@@ -37,5 +38,4 @@ def contact_page(request):
         errors = contact_form.errors.as_json()
         if is_ajax(request):
             return HttpResponse(errors, status=400, content_type='application/json')
-
     return render(request, "contact/view.html", context)

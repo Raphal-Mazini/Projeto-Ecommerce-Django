@@ -10,7 +10,8 @@ from accounts.views import login_page, register_page, logout_page, guest_registe
 from addresses.views import checkout_address_create_view, checkout_address_reuse_view
 from .views import (home_page,  
                     about_page, 
-                    contact_page)
+                    contact_page
+)
 
 urlpatterns = [
     path('', home_page, name='home'),
