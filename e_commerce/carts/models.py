@@ -24,15 +24,15 @@ class CartManager(models.Manager):
 
     def new(self, user=None):
         user_obj = None
-        if user and user.is_authenticated:
+        if user is not None and user.is_authenticated:
             user_obj = user
         return self.model.objects.create(user=user_obj)
 
 class Cart(models.Model):
     user        = models.ForeignKey(User, on_delete=models.CASCADE, null=True, blank=True)
     products    = models.ManyToManyField(Product, blank=True)
-    subtotal    = models.DecimalField(default=0.00, max_digits=100, decimal_places=2)
-    total       = models.DecimalField(default=0.00, max_digits=100, decimal_places=2)
+    subtotal    = models.DecimalField(default=Decimal(0.00), max_digits=100, decimal_places=2)
+    total       = models.DecimalField(default=Decimal(0.00), max_digits=100, decimal_places=2)
     updated     = models.DateTimeField(auto_now=True)
     timestamp   = models.DateTimeField(auto_now_add=True)
 
@@ -41,7 +41,7 @@ class Cart(models.Model):
     def __str__(self):
         return str(self.id)
 
-# ... (Mantenha as suas classes CartManager e Cart)
+# --- SIGNALS PARA CÁLCULO AUTOMÁTICO ---
 
 def m2m_changed_cart_receiver(sender, instance, action, *args, **kwargs):
     if action in ['post_add', 'post_remove', 'post_clear']:
@@ -56,10 +56,9 @@ def m2m_changed_cart_receiver(sender, instance, action, *args, **kwargs):
 m2m_changed.connect(m2m_changed_cart_receiver, sender=Cart.products.through)
 
 def pre_save_cart_receiver(sender, instance, *args, **kwargs):
-    # Calcula o total final (subtotal + taxas se houver)
     if instance.subtotal > 0:
-        instance.total = instance.subtotal # Pode somar frete aqui
+        instance.total = Decimal(instance.subtotal) # Pode adicionar taxas aqui
     else:
-        instance.total = 0.00
+        instance.total = Decimal(0.00)
 
 pre_save.connect(pre_save_cart_receiver, sender=Cart)
