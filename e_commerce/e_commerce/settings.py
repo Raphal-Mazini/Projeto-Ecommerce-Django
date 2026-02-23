@@ -49,6 +49,7 @@ INSTALLED_APPS = [
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 AUTH_USER_MODEL = 'accounts.User' # changes the built-in user model to ours
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -60,7 +61,13 @@ MIDDLEWARE = [
 ]
 
 LOGOUT_REDIRECT_URL = '/login/'
+
 ROOT_URLCONF = 'e_commerce.urls'
+
+AUTH_USER_MODEL = 'accounts.User'
+LOGIN_URL = '/login/'
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/login/'
 
 TEMPLATES = [
     {

@@ -1,53 +1,35 @@
 from django.db import models
 from django.contrib.auth.models import (
-    AbstractBaseUser, BaseUserManager
-)
-from django.db import models
-from django.contrib.auth.models import (
-    AbstractBaseUser, BaseUserManager, PermissionsMixin # Adicione PermissionsMixin aqui
+    AbstractBaseUser, BaseUserManager, PermissionsMixin
 )
 
 class UserManager(BaseUserManager):
-    def get_by_natural_key(self, email):
-        return self.get(email=email)
-    def create_user(self, email, password = None, is_active = True, is_staff = False, is_admin = False):
+    def create_user(self, email, password=None, is_active=True, is_staff=False, is_admin=False):
         if not email:
             raise ValueError("O Usuário deve ter um endereço de email.")
-        if not password:
-            raise ValueError("O Usuário deve ter uma senha.")
-        user_obj = self.model(
-            email = self.normalize_email(email)
-        )
-        user_obj.set_password(password) # muda a senha
-        user_obj.staff = is_staff
-        user_obj.admin = is_admin
-        user_obj.active = is_active
+        user_obj = self.model(email=self.normalize_email(email))
+        user_obj.set_password(password)
+        user_obj.is_staff = is_staff
+        user_obj.is_admin = is_admin
+        user_obj.is_active = is_active
         user_obj.save(using=self._db)
         return user_obj
-    def create_staffuser(self, email, password = None):
-        user = self.create_user(
-            email,
-            password = password,
-            staff = True
-        )
+
+    def create_superuser(self, email, password=None):
+        user = self.create_user(email, password=password, is_staff=True, is_admin=True)
+        user.is_superuser = True 
+        user.save(using=self._db)
         return user
-    def create_superuser(self, email, password = None):
-        user = self.create_user(
-            email,
-            password = password,
-            is_staff = True,
-            is_admin = True,
-        )
-        return user
-class User(AbstractBaseUser, PermissionsMixin): # Adicione aqui também
+
+class User(AbstractBaseUser, PermissionsMixin):
     email       = models.EmailField(max_length=255, unique=True)
-    active      = models.BooleanField(default=True)
-    staff       = models.BooleanField(default=False)
-    admin       = models.BooleanField(default=False)
+    is_active   = models.BooleanField(default=True)
+    is_staff    = models.BooleanField(default=False)
+    is_admin    = models.BooleanField(default=False)
     timestamp   = models.DateTimeField(auto_now_add=True)
 
     USERNAME_FIELD = 'email'
-    REQUIRED_FIELDS = []
+    REQUIRED_FIELDS = [] 
 
     objects = UserManager()
 
