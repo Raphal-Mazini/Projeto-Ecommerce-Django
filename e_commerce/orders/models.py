@@ -15,18 +15,19 @@ ORDER_STATUS_CHOICES = (
 class OrderManager(models.Manager):
     def new_or_get(self, billing_profile, cart_obj):
         created = False
+        # Procuramos apenas pedidos ATIVOS e que ainda estão em status 'created'
         qs = self.get_queryset().filter(
                 billing_profile=billing_profile, 
                 cart=cart_obj, 
                 active=True, 
-                status='created'
-            )
+                status='created') 
         if qs.count() == 1:
             obj = qs.first()
         else:
             obj = self.model.objects.create(
-                    billing_profile=billing_profile, 
-                    cart=cart_obj)
+                    billing_profile=billing_profile,
+                    cart=cart_obj,
+                    status='created') # Força o status inicial
             created = True
         return obj, created
 
@@ -60,7 +61,7 @@ class Order(models.Model):
         shipping_address = self.shipping_address
         billing_address = self.billing_address
         total = self.total
-        if billing_profile and shipping_address and billing_address and total > 0:
+        if billing_profile and shipping_address and billing_address and total > 0.00:
             return True
         return False
 
