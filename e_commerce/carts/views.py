@@ -60,7 +60,7 @@ def cart_update(request):
                 "cartItemCount": cart_obj.products.count()
             }
             return JsonResponse(json_data)
-            #return JsonResponse({"message":"Erro 400"}, status = 400)
+            #return JsonResponse({"message": "Erro 400"}, status = 400)
     return redirect("cart:home")
 
 def checkout_home(request):
@@ -71,7 +71,7 @@ def checkout_home(request):
     #ou se o carrinho já existir mas não tiver nada dentro
     if cart_created or cart_obj.products.count() == 0:
         return redirect("cart:home")  
-
+    
     login_form = LoginForm()
     guest_form = GuestForm()
     address_form = AddressForm()
@@ -92,12 +92,14 @@ def checkout_home(request):
         if billing_address_id or shipping_address_id:
             order_obj.save()
     if request.method == "POST":
-        if is_done := order_obj.check_done():
+        #verifica se o pedido foi feito
+        is_done = order_obj.check_done()
+        if is_done:
             order_obj.mark_paid()
             request.session['cart_items'] = 0
             del request.session['cart_id']
             return redirect("cart:success")
-
+    
     context = {
         "object": order_obj,
         "billing_profile": billing_profile,
