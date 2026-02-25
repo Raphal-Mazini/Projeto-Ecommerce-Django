@@ -111,19 +111,50 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+# settings.py
+
+# Altere de 'UTC' para o fuso da sua região
+#TIME_ZONE = 'America/Sao_Paulo'
+
+# Garante que o Django use o fuso horário definido acima internamente
+#USE_TZ = True
+
+# Define o fuso horário para tradução de datas e números na interface
+#USE_I18N = True
+
+# Opcional: Define o padrão de formatação de datas e números para o Brasil
+#LANGUAGE_CODE = 'pt-br'
+
+
+# settings.py
+
+# Altere de 'UTC' para o fuso da sua região
+TIME_ZONE = 'America/Sao_Paulo'
+
+# Garante que o Django use o fuso horário definido acima internamente
+USE_TZ = True
+
+# Define o fuso horário para tradução de datas e números na interface
+USE_I18N = True
+
+# Opcional: Define o padrão de formatação de datas e números para o Brasil
+LANGUAGE_CODE = 'pt-br'
+
+
+
 
 # Internationalization
 # https://docs.djangoproject.com/en/2.1/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+#LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+#TIME_ZONE = 'UTC'
 
-USE_I18N = True
+#USE_I18N = True
 
-USE_L10N = True
+#USE_L10N = True
 
-USE_TZ = True
+#USE_TZ = True
 
 
 # Static files (CSS, JavaScript, Images)
