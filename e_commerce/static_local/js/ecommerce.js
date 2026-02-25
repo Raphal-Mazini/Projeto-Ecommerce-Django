@@ -161,8 +161,4 @@ $(document).ready(function(){
       }
     })
   }
-<<<<<<< HEAD
 })
-=======
-})
->>>>>>> user_model_manager

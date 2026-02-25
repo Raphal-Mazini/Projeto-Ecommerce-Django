@@ -50,10 +50,6 @@ INSTALLED_APPS = [
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 AUTH_USER_MODEL = 'accounts.User' # changes the built-in user model to ours
-<<<<<<< HEAD
-
-=======
->>>>>>> user_model_manager
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
