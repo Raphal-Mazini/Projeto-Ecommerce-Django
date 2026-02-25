@@ -25,6 +25,10 @@ def guest_register_view(request):
             return redirect("/register/")
     return redirect("/register/")
 
+
+
+
+
 def login_page(request):
     form = LoginForm(request.POST or None)
     context = {
@@ -52,6 +56,9 @@ def login_page(request):
             #Retorna uma mensagem de erro de 'invalid login'.
             print("Login inválido")
     return render(request, "accounts/login.html", context)
+
+
+
 
 def logout_page(request):
     context = {
