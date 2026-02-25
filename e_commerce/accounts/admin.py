@@ -22,7 +22,7 @@ class UserAdmin(BaseUserAdmin):
     list_filter = ['admin', 'staff', 'active']
     fieldsets = (
         (None, {'fields': ('email', 'password')}),
-        ('Personal info', {'fields': ()}),
+        ('Personal info', {'fields': ('full_name',)}),
         ('Permissions', {'fields': ('admin', 'staff', 'active',)}),
     )
     # add_fieldsets is not a standard ModelAdmin attribute. UserAdmin
@@ -34,7 +34,7 @@ class UserAdmin(BaseUserAdmin):
         ),
     )
     search_fields = ['email']
-    ordering = ['email']
+    ordering = ['email', 'full_name']
     filter_horizontal = ()
 admin.site.register(User, UserAdmin)
 # Remove Group Model from admin. We're not using it.
