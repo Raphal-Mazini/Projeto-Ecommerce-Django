@@ -1,20 +1,31 @@
 {% load static %}
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
   <head>
-  <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Base Template</title>
+    <link rel="icon" type="image/png" href="{% static 'img/logo_brimauh.png' %}"/>
+        <title>Brimauh Fashion Outlet</title>
     {% include 'base/css.html' %}
     {% block base_head %}{% endblock base_head %}
+    <style>
+      body { padding-top: 85px; } /* Ajuste para a navbar fixa */
+    </style>
   </head>
   <body>
-    {% include 'base/navbar.html' with nome_da_marca='Loja virtual' %}
-    <div class='container'>
-      {% block content %} {% endblock %}
-    </div>
-    {% include 'base/js.html' %}
+    {% include 'base/navbar.html' with nome_da_marca='Brimauh Fashion Outlet' %}
     
+    <div class='container'>
+      {% block content %}{% endblock %}
+    </div>
+
+    {% include 'base/js.html' %}
+<<<<<<< HEAD
+    
+=======
+
+
+
+>>>>>>> user_model_manager
   </body>
 </html>

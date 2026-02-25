@@ -1,5 +1,34 @@
 [
 {
+<<<<<<< HEAD
+=======
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2026-02-24T14:18:29.045Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "1",
+        "object_repr": "Calþa Jeans",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2026-02-24T14:19:00.766Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "2",
+        "object_repr": "Calþa Calþa Tops",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+>>>>>>> user_model_manager
     "model": "auth.permission",
     "pk": 1,
     "fields": {
@@ -40,7 +69,11 @@
     "pk": 5,
     "fields": {
         "name": "Can add permission",
+<<<<<<< HEAD
         "content_type": 2,
+=======
+        "content_type": 3,
+>>>>>>> user_model_manager
         "codename": "add_permission"
     }
 },
@@ -49,7 +82,11 @@
     "pk": 6,
     "fields": {
         "name": "Can change permission",
+<<<<<<< HEAD
         "content_type": 2,
+=======
+        "content_type": 3,
+>>>>>>> user_model_manager
         "codename": "change_permission"
     }
 },
@@ -58,7 +95,11 @@
     "pk": 7,
     "fields": {
         "name": "Can delete permission",
+<<<<<<< HEAD
         "content_type": 2,
+=======
+        "content_type": 3,
+>>>>>>> user_model_manager
         "codename": "delete_permission"
     }
 },
@@ -67,7 +108,11 @@
     "pk": 8,
     "fields": {
         "name": "Can view permission",
+<<<<<<< HEAD
         "content_type": 2,
+=======
+        "content_type": 3,
+>>>>>>> user_model_manager
         "codename": "view_permission"
     }
 },
@@ -76,7 +121,11 @@
     "pk": 9,
     "fields": {
         "name": "Can add group",
+<<<<<<< HEAD
         "content_type": 3,
+=======
+        "content_type": 2,
+>>>>>>> user_model_manager
         "codename": "add_group"
     }
 },
@@ -85,7 +134,11 @@
     "pk": 10,
     "fields": {
         "name": "Can change group",
+<<<<<<< HEAD
         "content_type": 3,
+=======
+        "content_type": 2,
+>>>>>>> user_model_manager
         "codename": "change_group"
     }
 },
@@ -94,7 +147,11 @@
     "pk": 11,
     "fields": {
         "name": "Can delete group",
+<<<<<<< HEAD
         "content_type": 3,
+=======
+        "content_type": 2,
+>>>>>>> user_model_manager
         "codename": "delete_group"
     }
 },
@@ -103,7 +160,11 @@
     "pk": 12,
     "fields": {
         "name": "Can view group",
+<<<<<<< HEAD
         "content_type": 3,
+=======
+        "content_type": 2,
+>>>>>>> user_model_manager
         "codename": "view_group"
     }
 },
@@ -256,7 +317,11 @@
     "pk": 29,
     "fields": {
         "name": "Can add user",
+<<<<<<< HEAD
         "content_type": 8,
+=======
+        "content_type": 9,
+>>>>>>> user_model_manager
         "codename": "add_user"
     }
 },
@@ -265,7 +330,11 @@
     "pk": 30,
     "fields": {
         "name": "Can change user",
+<<<<<<< HEAD
         "content_type": 8,
+=======
+        "content_type": 9,
+>>>>>>> user_model_manager
         "codename": "change_user"
     }
 },
@@ -274,7 +343,11 @@
     "pk": 31,
     "fields": {
         "name": "Can delete user",
+<<<<<<< HEAD
         "content_type": 8,
+=======
+        "content_type": 9,
+>>>>>>> user_model_manager
         "codename": "delete_user"
     }
 },
@@ -283,7 +356,11 @@
     "pk": 32,
     "fields": {
         "name": "Can view user",
+<<<<<<< HEAD
         "content_type": 8,
+=======
+        "content_type": 9,
+>>>>>>> user_model_manager
         "codename": "view_user"
     }
 },
@@ -292,7 +369,11 @@
     "pk": 33,
     "fields": {
         "name": "Can add guest email",
+<<<<<<< HEAD
         "content_type": 9,
+=======
+        "content_type": 8,
+>>>>>>> user_model_manager
         "codename": "add_guestemail"
     }
 },
@@ -301,7 +382,11 @@
     "pk": 34,
     "fields": {
         "name": "Can change guest email",
+<<<<<<< HEAD
         "content_type": 9,
+=======
+        "content_type": 8,
+>>>>>>> user_model_manager
         "codename": "change_guestemail"
     }
 },
@@ -310,7 +395,11 @@
     "pk": 35,
     "fields": {
         "name": "Can delete guest email",
+<<<<<<< HEAD
         "content_type": 9,
+=======
+        "content_type": 8,
+>>>>>>> user_model_manager
         "codename": "delete_guestemail"
     }
 },
@@ -319,7 +408,11 @@
     "pk": 36,
     "fields": {
         "name": "Can view guest email",
+<<<<<<< HEAD
         "content_type": 9,
+=======
+        "content_type": 8,
+>>>>>>> user_model_manager
         "codename": "view_guestemail"
     }
 },
@@ -480,7 +573,11 @@
     "pk": 2,
     "fields": {
         "app_label": "auth",
+<<<<<<< HEAD
         "model": "permission"
+=======
+        "model": "group"
+>>>>>>> user_model_manager
     }
 },
 {
@@ -488,7 +585,11 @@
     "pk": 3,
     "fields": {
         "app_label": "auth",
+<<<<<<< HEAD
         "model": "group"
+=======
+        "model": "permission"
+>>>>>>> user_model_manager
     }
 },
 {
@@ -528,7 +629,11 @@
     "pk": 8,
     "fields": {
         "app_label": "accounts",
+<<<<<<< HEAD
         "model": "user"
+=======
+        "model": "guestemail"
+>>>>>>> user_model_manager
     }
 },
 {
@@ -536,7 +641,11 @@
     "pk": 9,
     "fields": {
         "app_label": "accounts",
+<<<<<<< HEAD
         "model": "guestemail"
+=======
+        "model": "user"
+>>>>>>> user_model_manager
     }
 },
 {
@@ -570,5 +679,1157 @@
         "app_label": "tags",
         "model": "tag"
     }
+<<<<<<< HEAD
+=======
+},
+{
+    "model": "sessions.session",
+    "pk": "02ljtvceahhhtxi7y8ann9eavwqp9xgg",
+    "fields": {
+        "session_data": "eyJjYXJ0X2l0ZW1zIjowLCJndWVzdF9lbWFpbF9pZCI6NSwiY2FydF9pZCI6MzV9:1vuvG8:7vTw25-iSmwePc2q0kHGC2nqd8sNHjlMffMk2drePf4",
+        "expire_date": "2026-03-10T16:27:40.271Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "7n9nax9gb6ig0o40ls2wpkmdpv06ung0",
+    "fields": {
+        "session_data": "eyJjYXJ0X2l0ZW1zIjowLCJndWVzdF9lbWFpbF9pZCI6NCwiY2FydF9pZCI6MzJ9:1vuvC4:SN9Ihc-FJvx4qlQsW0UdgfFCiV1YnoL0GvA5RIrv2nY",
+        "expire_date": "2026-03-10T16:23:28.585Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "i0b2zxmvi5dkokconjqb6icutnim40pt",
+    "fields": {
+        "session_data": "eyJjYXJ0X2l0ZW1zIjowLCJndWVzdF9lbWFpbF9pZCI6MSwiY2FydF9pZCI6MTJ9:1vutdX:fqZCf9NqX-umBfpenZ8am0pEDtBls6dxOUWArWjFUZQ",
+        "expire_date": "2026-03-10T14:43:43.674Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "te3jds4ad1uymew4i60h6rwlk2is91ez",
+    "fields": {
+        "session_data": ".eJxVjjsOgzAQBe-yNbJM_CF2mT5nsHa960A-IGFTRbl7hERD-2Y0el_IuLY0NflUiLqDhFsb01ZlTRNDhB5OG2F-ybwDfuL8WFRe5rZOpHZFHbSq-8Lyvh3uKTBiHSGCFdRiPV7RO-NdFleE3SWzpsx9KVYohOByP3jrTEAql0KM7I0xTJqgO44zRDP8_tRBQgw:1vuvHr:Mbp8E9C0uuRKLZyvbz33zBvNtefUcVfawk5agatFYJg",
+        "expire_date": "2026-03-10T16:29:27.628Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "ye6p62ouuqq3j6hg98jcrt6uiy664jns",
+    "fields": {
+        "session_data": "eyJjYXJ0X2lkIjoyMn0:1vuusH:cY0_hY4WU24BmR6OyXR3w10t_NgFqeTzNQ6zXy1EZV8",
+        "expire_date": "2026-03-10T16:03:01.822Z"
+    }
+},
+{
+    "model": "addresses.address",
+    "pk": 1,
+    "fields": {
+        "billing_profile": 1,
+        "address_type": "shipping",
+        "address_line_1": "RUA JOS╔ DE CARVALHO HEITOR,59",
+        "address_line_2": null,
+        "city": "NITERËI",
+        "country": "Brasil",
+        "state": "RJ",
+        "postal_code": "24358620"
+    }
+},
+{
+    "model": "addresses.address",
+    "pk": 2,
+    "fields": {
+        "billing_profile": 1,
+        "address_type": "billing",
+        "address_line_1": "Rua Professor Manuel JosÚ Ferreira",
+        "address_line_2": null,
+        "city": "Niter¾i",
+        "country": "Brasil",
+        "state": "RJ",
+        "postal_code": "24358-400"
+    }
+},
+{
+    "model": "addresses.address",
+    "pk": 3,
+    "fields": {
+        "billing_profile": 2,
+        "address_type": "shipping",
+        "address_line_1": "RUA JOS╔ DE CARVALHO HEITOR,59",
+        "address_line_2": null,
+        "city": "NITERËI",
+        "country": "Brasil",
+        "state": "RJ",
+        "postal_code": "24358620"
+    }
+},
+{
+    "model": "addresses.address",
+    "pk": 4,
+    "fields": {
+        "billing_profile": 2,
+        "address_type": "billing",
+        "address_line_1": "Rua Professor Manuel JosÚ Ferreira",
+        "address_line_2": null,
+        "city": "Santos",
+        "country": "Brasil",
+        "state": "SP",
+        "postal_code": "24358-400"
+    }
+},
+{
+    "model": "addresses.address",
+    "pk": 5,
+    "fields": {
+        "billing_profile": 2,
+        "address_type": "shipping",
+        "address_line_1": "RUA JOS╔ DE CARVALHO HEITOR,59",
+        "address_line_2": null,
+        "city": "NITERËI",
+        "country": "Brasil",
+        "state": "RJ",
+        "postal_code": "24358620"
+    }
+},
+{
+    "model": "addresses.address",
+    "pk": 6,
+    "fields": {
+        "billing_profile": 2,
+        "address_type": "shipping",
+        "address_line_1": "RUA JOS╔ DE CARVALHO HEITOR,59",
+        "address_line_2": null,
+        "city": "NITERËI",
+        "country": "Brasil",
+        "state": "RJ",
+        "postal_code": "24358620"
+    }
+},
+{
+    "model": "addresses.address",
+    "pk": 7,
+    "fields": {
+        "billing_profile": 2,
+        "address_type": "billing",
+        "address_line_1": "Rua Professor Manuel JosÚ Ferreira",
+        "address_line_2": null,
+        "city": "Santos",
+        "country": "Brasil",
+        "state": "SP",
+        "postal_code": "24358-400"
+    }
+},
+{
+    "model": "addresses.address",
+    "pk": 8,
+    "fields": {
+        "billing_profile": 2,
+        "address_type": "shipping",
+        "address_line_1": "RUA JOS╔ DE CARVALHO HEITOR,59",
+        "address_line_2": null,
+        "city": "NITERËI",
+        "country": "Brasil",
+        "state": "RJ",
+        "postal_code": "24358620"
+    }
+},
+{
+    "model": "addresses.address",
+    "pk": 9,
+    "fields": {
+        "billing_profile": 2,
+        "address_type": "billing",
+        "address_line_1": "Rua Professor Manuel JosÚ Ferreira",
+        "address_line_2": null,
+        "city": "Niter¾i",
+        "country": "Brasil",
+        "state": "RJ",
+        "postal_code": "24358-400"
+    }
+},
+{
+    "model": "addresses.address",
+    "pk": 10,
+    "fields": {
+        "billing_profile": 2,
+        "address_type": "shipping",
+        "address_line_1": "Rua Professor Manuel JosÚ Ferreira",
+        "address_line_2": null,
+        "city": "Santos",
+        "country": "Brasil",
+        "state": "SP",
+        "postal_code": "24358-400"
+    }
+},
+{
+    "model": "addresses.address",
+    "pk": 11,
+    "fields": {
+        "billing_profile": 2,
+        "address_type": "billing",
+        "address_line_1": "Rua Professor Manuel JosÚ Ferreira",
+        "address_line_2": null,
+        "city": "Niter¾i",
+        "country": "Brasil",
+        "state": "RJ",
+        "postal_code": "24358-400"
+    }
+},
+{
+    "model": "addresses.address",
+    "pk": 12,
+    "fields": {
+        "billing_profile": 2,
+        "address_type": "shipping",
+        "address_line_1": "Rua Professor Manuel JosÚ Ferreira",
+        "address_line_2": null,
+        "city": "Santos",
+        "country": "Brasil",
+        "state": "SP",
+        "postal_code": "24358-400"
+    }
+},
+{
+    "model": "addresses.address",
+    "pk": 13,
+    "fields": {
+        "billing_profile": 2,
+        "address_type": "billing",
+        "address_line_1": "Rua Professor Manuel JosÚ Ferreira",
+        "address_line_2": null,
+        "city": "Santos",
+        "country": "Brasil",
+        "state": "SP",
+        "postal_code": "24358-400"
+    }
+},
+{
+    "model": "addresses.address",
+    "pk": 14,
+    "fields": {
+        "billing_profile": 2,
+        "address_type": "shipping",
+        "address_line_1": "Rua Professor Manuel JosÚ Ferreira",
+        "address_line_2": null,
+        "city": "Niter¾i",
+        "country": "Brasil",
+        "state": "RJ",
+        "postal_code": "24358-400"
+    }
+},
+{
+    "model": "addresses.address",
+    "pk": 15,
+    "fields": {
+        "billing_profile": 2,
+        "address_type": "billing",
+        "address_line_1": "Rua Professor Manuel JosÚ Ferreira, 80",
+        "address_line_2": null,
+        "city": "Piratininga, Niter¾i",
+        "country": "Brasil",
+        "state": "RJ",
+        "postal_code": "24358-400"
+    }
+},
+{
+    "model": "billing.billingprofile",
+    "pk": 1,
+    "fields": {
+        "user": 1,
+        "email": "raphaelmazini37@gmail.com",
+        "active": true,
+        "update": "2026-02-24T14:16:11.987Z",
+        "timestamp": "2026-02-24T14:16:11.987Z"
+    }
+},
+{
+    "model": "billing.billingprofile",
+    "pk": 2,
+    "fields": {
+        "user": null,
+        "email": "dadado@gmail.com",
+        "active": true,
+        "update": "2026-02-24T14:43:35.419Z",
+        "timestamp": "2026-02-24T14:43:35.419Z"
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$1200000$MNZ37QCHpZiMYyhe3E6dWc$qoUHPYPMm1XlTBaOw6UgCqbg+PXKa2AR2UWdiiQt3/0=",
+        "last_login": "2026-02-24T16:29:21.884Z",
+        "email": "raphaelmazini37@gmail.com",
+        "active": true,
+        "staff": true,
+        "admin": true,
+        "timestamp": "2026-02-24T14:16:11.228Z"
+    }
+},
+{
+    "model": "accounts.guestemail",
+    "pk": 1,
+    "fields": {
+        "email": "dadado@gmail.com",
+        "active": true,
+        "update": "2026-02-24T14:43:35.343Z",
+        "timestamp": "2026-02-24T14:43:35.343Z"
+    }
+},
+{
+    "model": "accounts.guestemail",
+    "pk": 2,
+    "fields": {
+        "email": "dadado@gmail.com",
+        "active": true,
+        "update": "2026-02-24T15:56:23.253Z",
+        "timestamp": "2026-02-24T15:56:23.253Z"
+    }
+},
+{
+    "model": "accounts.guestemail",
+    "pk": 3,
+    "fields": {
+        "email": "dadado@gmail.com",
+        "active": true,
+        "update": "2026-02-24T16:06:46.708Z",
+        "timestamp": "2026-02-24T16:06:46.708Z"
+    }
+},
+{
+    "model": "accounts.guestemail",
+    "pk": 4,
+    "fields": {
+        "email": "dadado@gmail.com",
+        "active": true,
+        "update": "2026-02-24T16:21:38.741Z",
+        "timestamp": "2026-02-24T16:21:38.741Z"
+    }
+},
+{
+    "model": "accounts.guestemail",
+    "pk": 5,
+    "fields": {
+        "email": "dadado@gmail.com",
+        "active": true,
+        "update": "2026-02-24T16:26:37.324Z",
+        "timestamp": "2026-02-24T16:26:37.324Z"
+    }
+},
+{
+    "model": "carts.cart",
+    "pk": 1,
+    "fields": {
+        "user": null,
+        "subtotal": "0.00",
+        "total": "0.00",
+        "updated": "2026-02-24T14:17:36.465Z",
+        "timestamp": "2026-02-24T14:17:36.465Z",
+        "products": []
+    }
+},
+{
+    "model": "carts.cart",
+    "pk": 2,
+    "fields": {
+        "user": 1,
+        "subtotal": "25487.00",
+        "total": "25487.00",
+        "updated": "2026-02-24T14:19:21.300Z",
+        "timestamp": "2026-02-24T14:19:08.867Z",
+        "products": [
+            2
+        ]
+    }
+},
+{
+    "model": "carts.cart",
+    "pk": 3,
+    "fields": {
+        "user": 1,
+        "subtotal": "0.00",
+        "total": "0.00",
+        "updated": "2026-02-24T14:19:30.956Z",
+        "timestamp": "2026-02-24T14:19:30.956Z",
+        "products": []
+    }
+},
+{
+    "model": "carts.cart",
+    "pk": 4,
+    "fields": {
+        "user": 1,
+        "subtotal": "25487.00",
+        "total": "25487.00",
+        "updated": "2026-02-24T14:21:09.729Z",
+        "timestamp": "2026-02-24T14:21:06.411Z",
+        "products": [
+            2
+        ]
+    }
+},
+{
+    "model": "carts.cart",
+    "pk": 5,
+    "fields": {
+        "user": 1,
+        "subtotal": "0.00",
+        "total": "0.00",
+        "updated": "2026-02-24T14:21:18.369Z",
+        "timestamp": "2026-02-24T14:21:18.369Z",
+        "products": []
+    }
+},
+{
+    "model": "carts.cart",
+    "pk": 6,
+    "fields": {
+        "user": 1,
+        "subtotal": "26741.00",
+        "total": "26741.00",
+        "updated": "2026-02-24T14:28:33.666Z",
+        "timestamp": "2026-02-24T14:28:23.549Z",
+        "products": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "carts.cart",
+    "pk": 7,
+    "fields": {
+        "user": 1,
+        "subtotal": "0.00",
+        "total": "0.00",
+        "updated": "2026-02-24T14:28:41.909Z",
+        "timestamp": "2026-02-24T14:28:41.909Z",
+        "products": []
+    }
+},
+{
+    "model": "carts.cart",
+    "pk": 8,
+    "fields": {
+        "user": 1,
+        "subtotal": "25487.00",
+        "total": "25487.00",
+        "updated": "2026-02-24T14:31:50.179Z",
+        "timestamp": "2026-02-24T14:31:37.371Z",
+        "products": [
+            2
+        ]
+    }
+},
+{
+    "model": "carts.cart",
+    "pk": 9,
+    "fields": {
+        "user": 1,
+        "subtotal": "25487.00",
+        "total": "25487.00",
+        "updated": "2026-02-24T14:34:49.427Z",
+        "timestamp": "2026-02-24T14:32:06.175Z",
+        "products": [
+            2
+        ]
+    }
+},
+{
+    "model": "carts.cart",
+    "pk": 10,
+    "fields": {
+        "user": 1,
+        "subtotal": "25487.00",
+        "total": "25487.00",
+        "updated": "2026-02-24T14:44:03.978Z",
+        "timestamp": "2026-02-24T14:34:56.445Z",
+        "products": [
+            2
+        ]
+    }
+},
+{
+    "model": "carts.cart",
+    "pk": 11,
+    "fields": {
+        "user": null,
+        "subtotal": "25487.00",
+        "total": "25487.00",
+        "updated": "2026-02-24T14:43:17.619Z",
+        "timestamp": "2026-02-24T14:43:14.969Z",
+        "products": [
+            2
+        ]
+    }
+},
+{
+    "model": "carts.cart",
+    "pk": 12,
+    "fields": {
+        "user": null,
+        "subtotal": "0.00",
+        "total": "0.00",
+        "updated": "2026-02-24T14:43:43.655Z",
+        "timestamp": "2026-02-24T14:43:43.655Z",
+        "products": []
+    }
+},
+{
+    "model": "carts.cart",
+    "pk": 13,
+    "fields": {
+        "user": 1,
+        "subtotal": "0.00",
+        "total": "0.00",
+        "updated": "2026-02-24T14:44:14.018Z",
+        "timestamp": "2026-02-24T14:44:14.019Z",
+        "products": []
+    }
+},
+{
+    "model": "carts.cart",
+    "pk": 14,
+    "fields": {
+        "user": 1,
+        "subtotal": "25487.00",
+        "total": "25487.00",
+        "updated": "2026-02-24T15:51:40.193Z",
+        "timestamp": "2026-02-24T15:51:14.671Z",
+        "products": [
+            2
+        ]
+    }
+},
+{
+    "model": "carts.cart",
+    "pk": 15,
+    "fields": {
+        "user": 1,
+        "subtotal": "0.00",
+        "total": "0.00",
+        "updated": "2026-02-24T15:51:52.141Z",
+        "timestamp": "2026-02-24T15:51:52.141Z",
+        "products": []
+    }
+},
+{
+    "model": "carts.cart",
+    "pk": 16,
+    "fields": {
+        "user": null,
+        "subtotal": "0.00",
+        "total": "0.00",
+        "updated": "2026-02-24T15:52:27.182Z",
+        "timestamp": "2026-02-24T15:52:27.182Z",
+        "products": []
+    }
+},
+{
+    "model": "carts.cart",
+    "pk": 17,
+    "fields": {
+        "user": 1,
+        "subtotal": "25487.00",
+        "total": "25487.00",
+        "updated": "2026-02-24T15:53:03.554Z",
+        "timestamp": "2026-02-24T15:52:50.944Z",
+        "products": [
+            2
+        ]
+    }
+},
+{
+    "model": "carts.cart",
+    "pk": 18,
+    "fields": {
+        "user": 1,
+        "subtotal": "0.00",
+        "total": "0.00",
+        "updated": "2026-02-24T15:53:09.929Z",
+        "timestamp": "2026-02-24T15:53:09.929Z",
+        "products": []
+    }
+},
+{
+    "model": "carts.cart",
+    "pk": 19,
+    "fields": {
+        "user": 1,
+        "subtotal": "25487.00",
+        "total": "25487.00",
+        "updated": "2026-02-24T15:55:08.664Z",
+        "timestamp": "2026-02-24T15:54:59.417Z",
+        "products": [
+            2
+        ]
+    }
+},
+{
+    "model": "carts.cart",
+    "pk": 20,
+    "fields": {
+        "user": 1,
+        "subtotal": "0.00",
+        "total": "0.00",
+        "updated": "2026-02-24T15:55:44.020Z",
+        "timestamp": "2026-02-24T15:55:44.020Z",
+        "products": []
+    }
+},
+{
+    "model": "carts.cart",
+    "pk": 21,
+    "fields": {
+        "user": null,
+        "subtotal": "25487.00",
+        "total": "25487.00",
+        "updated": "2026-02-24T15:56:16.229Z",
+        "timestamp": "2026-02-24T15:56:13.659Z",
+        "products": [
+            2
+        ]
+    }
+},
+{
+    "model": "carts.cart",
+    "pk": 22,
+    "fields": {
+        "user": null,
+        "subtotal": "0.00",
+        "total": "0.00",
+        "updated": "2026-02-24T16:03:01.745Z",
+        "timestamp": "2026-02-24T16:03:01.745Z",
+        "products": []
+    }
+},
+{
+    "model": "carts.cart",
+    "pk": 23,
+    "fields": {
+        "user": 1,
+        "subtotal": "25487.00",
+        "total": "25487.00",
+        "updated": "2026-02-24T16:03:38.000Z",
+        "timestamp": "2026-02-24T16:03:27.130Z",
+        "products": [
+            2
+        ]
+    }
+},
+{
+    "model": "carts.cart",
+    "pk": 24,
+    "fields": {
+        "user": 1,
+        "subtotal": "0.00",
+        "total": "0.00",
+        "updated": "2026-02-24T16:04:14.580Z",
+        "timestamp": "2026-02-24T16:04:14.580Z",
+        "products": []
+    }
+},
+{
+    "model": "carts.cart",
+    "pk": 25,
+    "fields": {
+        "user": 1,
+        "subtotal": "25487.00",
+        "total": "25487.00",
+        "updated": "2026-02-24T16:16:43.800Z",
+        "timestamp": "2026-02-24T16:06:34.535Z",
+        "products": [
+            2
+        ]
+    }
+},
+{
+    "model": "carts.cart",
+    "pk": 26,
+    "fields": {
+        "user": 1,
+        "subtotal": "25487.00",
+        "total": "25487.00",
+        "updated": "2026-02-24T16:17:46.878Z",
+        "timestamp": "2026-02-24T16:17:38.832Z",
+        "products": [
+            2
+        ]
+    }
+},
+{
+    "model": "carts.cart",
+    "pk": 27,
+    "fields": {
+        "user": null,
+        "subtotal": "0.00",
+        "total": "0.00",
+        "updated": "2026-02-24T16:19:33.000Z",
+        "timestamp": "2026-02-24T16:19:33.000Z",
+        "products": []
+    }
+},
+{
+    "model": "carts.cart",
+    "pk": 28,
+    "fields": {
+        "user": 1,
+        "subtotal": "26741.00",
+        "total": "26741.00",
+        "updated": "2026-02-24T16:20:55.744Z",
+        "timestamp": "2026-02-24T16:20:45.141Z",
+        "products": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "carts.cart",
+    "pk": 29,
+    "fields": {
+        "user": 1,
+        "subtotal": "0.00",
+        "total": "0.00",
+        "updated": "2026-02-24T16:21:04.249Z",
+        "timestamp": "2026-02-24T16:21:04.249Z",
+        "products": []
+    }
+},
+{
+    "model": "carts.cart",
+    "pk": 30,
+    "fields": {
+        "user": null,
+        "subtotal": "25487.00",
+        "total": "25487.00",
+        "updated": "2026-02-24T16:21:32.306Z",
+        "timestamp": "2026-02-24T16:21:29.891Z",
+        "products": [
+            2
+        ]
+    }
+},
+{
+    "model": "carts.cart",
+    "pk": 31,
+    "fields": {
+        "user": null,
+        "subtotal": "1254.00",
+        "total": "1254.00",
+        "updated": "2026-02-24T16:23:09.348Z",
+        "timestamp": "2026-02-24T16:21:47.438Z",
+        "products": [
+            1
+        ]
+    }
+},
+{
+    "model": "carts.cart",
+    "pk": 32,
+    "fields": {
+        "user": null,
+        "subtotal": "0.00",
+        "total": "0.00",
+        "updated": "2026-02-24T16:23:28.476Z",
+        "timestamp": "2026-02-24T16:23:28.476Z",
+        "products": []
+    }
+},
+{
+    "model": "carts.cart",
+    "pk": 33,
+    "fields": {
+        "user": null,
+        "subtotal": "25487.00",
+        "total": "25487.00",
+        "updated": "2026-02-24T16:26:29.998Z",
+        "timestamp": "2026-02-24T16:26:27.660Z",
+        "products": [
+            2
+        ]
+    }
+},
+{
+    "model": "carts.cart",
+    "pk": 34,
+    "fields": {
+        "user": null,
+        "subtotal": "25487.00",
+        "total": "25487.00",
+        "updated": "2026-02-24T16:27:30.332Z",
+        "timestamp": "2026-02-24T16:26:45.274Z",
+        "products": [
+            2
+        ]
+    }
+},
+{
+    "model": "carts.cart",
+    "pk": 35,
+    "fields": {
+        "user": null,
+        "subtotal": "0.00",
+        "total": "0.00",
+        "updated": "2026-02-24T16:27:39.852Z",
+        "timestamp": "2026-02-24T16:27:39.852Z",
+        "products": []
+    }
+},
+{
+    "model": "carts.cart",
+    "pk": 36,
+    "fields": {
+        "user": 1,
+        "subtotal": "1254.00",
+        "total": "1254.00",
+        "updated": "2026-02-24T16:29:21.942Z",
+        "timestamp": "2026-02-24T16:29:14.452Z",
+        "products": [
+            1
+        ]
+    }
+},
+{
+    "model": "carts.cart",
+    "pk": 37,
+    "fields": {
+        "user": 1,
+        "subtotal": "0.00",
+        "total": "0.00",
+        "updated": "2026-02-24T16:29:27.562Z",
+        "timestamp": "2026-02-24T16:29:27.562Z",
+        "products": []
+    }
+},
+{
+    "model": "orders.order",
+    "pk": 1,
+    "fields": {
+        "billing_profile": 1,
+        "order_id": "fq6fe7gnxn",
+        "shipping_address": 1,
+        "billing_address": 2,
+        "cart": 2,
+        "status": "paid",
+        "shipping_total": "5.99",
+        "total": "25492.99",
+        "active": true
+    }
+},
+{
+    "model": "orders.order",
+    "pk": 2,
+    "fields": {
+        "billing_profile": 1,
+        "order_id": "mokrsttspn",
+        "shipping_address": 2,
+        "billing_address": 1,
+        "cart": 4,
+        "status": "paid",
+        "shipping_total": "5.99",
+        "total": "25492.99",
+        "active": true
+    }
+},
+{
+    "model": "orders.order",
+    "pk": 3,
+    "fields": {
+        "billing_profile": 1,
+        "order_id": "2imxg8j0ps",
+        "shipping_address": 2,
+        "billing_address": 1,
+        "cart": 6,
+        "status": "paid",
+        "shipping_total": "5.99",
+        "total": "26746.99",
+        "active": true
+    }
+},
+{
+    "model": "orders.order",
+    "pk": 4,
+    "fields": {
+        "billing_profile": 1,
+        "order_id": "f3kfvgzmnp",
+        "shipping_address": null,
+        "billing_address": null,
+        "cart": 8,
+        "status": "created",
+        "shipping_total": "5.99",
+        "total": "25492.99",
+        "active": true
+    }
+},
+{
+    "model": "orders.order",
+    "pk": 5,
+    "fields": {
+        "billing_profile": 2,
+        "order_id": "pqmt7au414",
+        "shipping_address": 3,
+        "billing_address": 4,
+        "cart": 11,
+        "status": "paid",
+        "shipping_total": "5.99",
+        "total": "25492.99",
+        "active": true
+    }
+},
+{
+    "model": "orders.order",
+    "pk": 6,
+    "fields": {
+        "billing_profile": 1,
+        "order_id": "nlv9ezcc46",
+        "shipping_address": 1,
+        "billing_address": 2,
+        "cart": 10,
+        "status": "paid",
+        "shipping_total": "5.99",
+        "total": "25492.99",
+        "active": true
+    }
+},
+{
+    "model": "orders.order",
+    "pk": 7,
+    "fields": {
+        "billing_profile": 1,
+        "order_id": "blovs37f9k",
+        "shipping_address": 1,
+        "billing_address": 2,
+        "cart": 14,
+        "status": "paid",
+        "shipping_total": "5.99",
+        "total": "25492.99",
+        "active": true
+    }
+},
+{
+    "model": "orders.order",
+    "pk": 8,
+    "fields": {
+        "billing_profile": 1,
+        "order_id": "d83qe65bzw",
+        "shipping_address": 1,
+        "billing_address": 2,
+        "cart": 17,
+        "status": "paid",
+        "shipping_total": "5.99",
+        "total": "25492.99",
+        "active": true
+    }
+},
+{
+    "model": "orders.order",
+    "pk": 9,
+    "fields": {
+        "billing_profile": 1,
+        "order_id": "vk4d359ta6",
+        "shipping_address": 1,
+        "billing_address": 2,
+        "cart": 19,
+        "status": "paid",
+        "shipping_total": "5.99",
+        "total": "25492.99",
+        "active": true
+    }
+},
+{
+    "model": "orders.order",
+    "pk": 10,
+    "fields": {
+        "billing_profile": 2,
+        "order_id": "8ri6in26yg",
+        "shipping_address": 5,
+        "billing_address": null,
+        "cart": 21,
+        "status": "created",
+        "shipping_total": "5.99",
+        "total": "25492.99",
+        "active": true
+    }
+},
+{
+    "model": "orders.order",
+    "pk": 11,
+    "fields": {
+        "billing_profile": 1,
+        "order_id": "2mdwx2gvbc",
+        "shipping_address": 1,
+        "billing_address": 2,
+        "cart": 23,
+        "status": "paid",
+        "shipping_total": "5.99",
+        "total": "25492.99",
+        "active": true
+    }
+},
+{
+    "model": "orders.order",
+    "pk": 12,
+    "fields": {
+        "billing_profile": 2,
+        "order_id": "w53ewdjl7i",
+        "shipping_address": 6,
+        "billing_address": 7,
+        "cart": 25,
+        "status": "created",
+        "shipping_total": "5.99",
+        "total": "25492.99",
+        "active": true
+    }
+},
+{
+    "model": "orders.order",
+    "pk": 13,
+    "fields": {
+        "billing_profile": 1,
+        "order_id": "wbq79k155c",
+        "shipping_address": 1,
+        "billing_address": 2,
+        "cart": 25,
+        "status": "created",
+        "shipping_total": "5.99",
+        "total": "25492.99",
+        "active": true
+    }
+},
+{
+    "model": "orders.order",
+    "pk": 14,
+    "fields": {
+        "billing_profile": 1,
+        "order_id": "cs6re24owg",
+        "shipping_address": 2,
+        "billing_address": 1,
+        "cart": 26,
+        "status": "paid",
+        "shipping_total": "5.99",
+        "total": "25492.99",
+        "active": true
+    }
+},
+{
+    "model": "orders.order",
+    "pk": 15,
+    "fields": {
+        "billing_profile": 1,
+        "order_id": "o92a65bu9g",
+        "shipping_address": 1,
+        "billing_address": 2,
+        "cart": 28,
+        "status": "paid",
+        "shipping_total": "5.99",
+        "total": "26746.99",
+        "active": true
+    }
+},
+{
+    "model": "orders.order",
+    "pk": 16,
+    "fields": {
+        "billing_profile": 2,
+        "order_id": "dv64nsxslw",
+        "shipping_address": 8,
+        "billing_address": 9,
+        "cart": 30,
+        "status": "paid",
+        "shipping_total": "5.99",
+        "total": "25492.99",
+        "active": true
+    }
+},
+{
+    "model": "orders.order",
+    "pk": 17,
+    "fields": {
+        "billing_profile": 2,
+        "order_id": "ip8csm0p5m",
+        "shipping_address": 10,
+        "billing_address": 11,
+        "cart": 31,
+        "status": "paid",
+        "shipping_total": "5.99",
+        "total": "1259.99",
+        "active": true
+    }
+},
+{
+    "model": "orders.order",
+    "pk": 18,
+    "fields": {
+        "billing_profile": 2,
+        "order_id": "qvudlslid0",
+        "shipping_address": 12,
+        "billing_address": 13,
+        "cart": 33,
+        "status": "paid",
+        "shipping_total": "5.99",
+        "total": "25492.99",
+        "active": true
+    }
+},
+{
+    "model": "orders.order",
+    "pk": 19,
+    "fields": {
+        "billing_profile": 2,
+        "order_id": "jv02drka38",
+        "shipping_address": 14,
+        "billing_address": 15,
+        "cart": 34,
+        "status": "paid",
+        "shipping_total": "5.99",
+        "total": "25492.99",
+        "active": true
+    }
+},
+{
+    "model": "orders.order",
+    "pk": 20,
+    "fields": {
+        "billing_profile": 1,
+        "order_id": "l3iel3d6u0",
+        "shipping_address": 1,
+        "billing_address": 2,
+        "cart": 36,
+        "status": "paid",
+        "shipping_total": "5.99",
+        "total": "1259.99",
+        "active": true
+    }
+},
+{
+    "model": "products.product",
+    "pk": 1,
+    "fields": {
+        "title": "Calþa Jeans",
+        "slug": "calca-jeans",
+        "description": "sgfsdfgdruhtyuiryuityoktuioluipuio┤56bh5745u7465er1y5rt",
+        "price": "1254.00",
+        "image": "products/louis-vuitton-calca-jeans-de-cintura-alta-frontview_C3ieC22_wcOUIhS.avif",
+        "featured": false,
+        "active": true,
+        "timestamp": "2026-02-24T14:18:29.043Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 2,
+    "fields": {
+        "title": "Calþa Calþa Tops",
+        "slug": "calca-calca-tops",
+        "description": "dsgdzfhsdþpkoAOUIIUXZAWSZMIIPOiopOISDHiumyigbuy",
+        "price": "25487.00",
+        "image": "products/louis-vuitton-calca-jeans-de-cintura-alta-Backview_oieUq02.avif",
+        "featured": false,
+        "active": true,
+        "timestamp": "2026-02-24T14:19:00.764Z"
+    }
+>>>>>>> user_model_manager
 }
 ]

@@ -1,7 +1,6 @@
-# Byte-compiled / optimized / DLL files
-__pycache__/
+static_cdn/
+static_root/
 *.sqlite3
-bin/
+__pycache__/
+venv/
 .vscode/
-lib/
-pyvenv.cfg

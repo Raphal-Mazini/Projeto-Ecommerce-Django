@@ -3,37 +3,27 @@ from django.contrib.auth import get_user_model
 
 User = get_user_model()
 
-class GuestForm(forms.Form):
-    email = forms.EmailField()
-    
 class LoginForm(forms.Form):
-    username = forms.CharField()
-    password = forms.CharField(widget=forms.PasswordInput)
+    email = forms.EmailField(label="E-mail")
+    password = forms.CharField(widget=forms.PasswordInput, label="Senha")
 
 class RegisterForm(forms.Form):
-    username = forms.CharField()
-    email = forms.EmailField()
-    password = forms.CharField(widget=forms.PasswordInput)
-    password2 = forms.CharField(label='Confirm password', widget=forms.PasswordInput)
-
-    def clean_username(self):
-        username = self.cleaned_data.get('username')
-        qs = User.objects.filter(username=username)
-        if qs.exists():
-            raise forms.ValidationError("Esse usuário já existe, escolha outro nome.")
-        return username
+    full_name = forms.CharField(label="Nome Completo")
+    email     = forms.EmailField(label="E-mail")
+    password  = forms.CharField(widget=forms.PasswordInput, label="Senha")
+    password2 = forms.CharField(label='Confirme a Senha', widget=forms.PasswordInput)
 
     def clean_email(self):
         email = self.cleaned_data.get('email')
-        qs = User.objects.filter(email=email)
-        if qs.exists():
-            raise forms.ValidationError("Esse email já existe, tente outro!")
+        if User.objects.filter(email=email).exists():
+            raise forms.ValidationError("Este e-mail já está cadastrado.")
         return email
 
     def clean(self):
         data = self.cleaned_data
-        password = self.cleaned_data.get('password')
-        password2 = self.cleaned_data.get('password2')
-        if password != password2:
-            raise forms.ValidationError("As senhas informadas devem ser iguais!")
+        if data.get('password') != data.get('password2'):
+            raise forms.ValidationError("As senhas devem ser iguais.")
         return data
+
+class GuestForm(forms.Form):
+    email = forms.EmailField(label="E-mail para convidado")

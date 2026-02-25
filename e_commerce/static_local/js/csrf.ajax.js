@@ -70,6 +70,12 @@ $(document).ready(function(){
       body: JSON.stringify(data)
     });
   }
+<<<<<<< HEAD
   const url = window.location.pathname;
   sendData(url)
 });
+=======
+  //const url = window.location.pathname;
+  //sendData(url)
+});
+>>>>>>> user_model_manager
