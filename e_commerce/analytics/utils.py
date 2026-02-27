@@ -7,11 +7,11 @@ def get_client_ip(request):
         # Se estiver presente, o cabeçalho pode conter uma lista de endereços IP separados por vírgulas.
         # Portanto, dividimos a string em uma lista usando ',' como delimitador e pegamos o primeiro elemento da lista,
         # que é o endereço IP do user.
-        ip = x_forwarded_for.split(",")#[0]
+        ip = x_forwarded_for.split(",")#[0].strip()
     else:
         # Se o cabeçalho 'HTTP_X_FORWARDED_FOR' não estiver presente, usamos o endereço IP do user
         # que está disponível em 'request.META["REMOTE_ADDR"]'.
-        ip = request.META.get("REMOTE_ADDR")
+        ip = request.META.get("REMOTE_ADDR", None)
     
     # Retornamos o endereço IP final.
-    return ip
+    return ip 
