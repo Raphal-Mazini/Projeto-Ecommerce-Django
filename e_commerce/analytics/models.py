@@ -29,9 +29,15 @@ class ObjectViewed(models.Model):
         verbose_name_plural = 'Objects viewed'
 
 def object_viewed_receiver(sender, instance, request, *args, **kwargs):
-    c_type = ContentType.objects.get_for_model(sender) # instance.__class__
+    c_type = ContentType.objects.get_for_model(sender)
+    
+    # Validação para evitar o erro de AnonymousUser
+    user = None
+    if request.user.is_authenticated:
+        user = request.user
+
     new_view_obj = ObjectViewed.objects.create(
-        user = request.user,
+        user = user, # Agora passa o usuário logado ou None
         content_type = c_type,
         object_id = instance.id,
         ip_address = get_client_ip(request)
